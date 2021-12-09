@@ -1,19 +1,19 @@
 @font-face {
     font-family: "heeboRegular";
-    src: url(/fonts/Heebo-Regular.ttf);
+    src: url(fonts/Heebo-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: "heeboMedium";
-    src: url(/fonts/Heebo-Medium.ttf);
+    src: url(fonts/Heebo-Medium.ttf);
     font-weight: 500;
 }
 
 
 @font-face {
     font-family: "heeboBold";
-    src: url(/fonts/Heebo-Bold.ttf);
+    src: url(fonts/Heebo-Bold.ttf);
     font-weight: 700;
 }
 
