@@ -1,0 +1,421 @@
+@font-face {
+    font-family: "heeboRegular";
+    src: url(/fonts/Heebo-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "heeboMedium";
+    src: url(/fonts/Heebo-Medium.ttf);
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: "heeboBold";
+    src: url(/fonts/Heebo-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto !important;
+    max-width: 1152px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 87px;
+   
+}
+
+.nav-list {
+   display: flex;
+   height: 100%;
+   align-items: center;
+   justify-content:flex-end;
+   margin-right: 60px;
+}
+
+.nav-item {
+    font-family: "heeboMedium";
+    color: black;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.nav-item:hover {
+    color: #FF6464;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 33px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.6s;
+  }
+  
+  .change .bar1 {
+   
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {
+      opacity: 0;
+    }
+  
+  .change .bar3 {
+    
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+/* hero */
+
+.container {
+    max-width: 855px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 156px;
+}
+
+.hero-header {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    max-width: 506px;
+    font-family: "heeboBold";
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243D;
+}
+
+.hero-description {
+    max-width: 497px;
+    font-family: "heeboRegular";
+    font-size: 16px;
+    line-height: 23px;
+    color: #21243D;
+    margin-bottom: 47px;
+}
+
+.hero-button {
+    font-family: "heeboMedium";
+    font-size: 20px;
+    color: white;
+    padding: 13px 21px 13px 20px;
+    border:2px solid #FF6464;
+    background-color: #FF6464;    
+    transition: all 250ms;    
+    outline: 2px solid #FF6464;
+}
+
+
+.hero-button:hover {    
+    color: rgb(34, 34, 34);
+    outline-offset: 4px;    
+    background: none;
+}
+
+
+.hero-photo {
+    width: 243px;
+    height: 243px;
+    transition: all 1s ease-out;
+}
+
+/* .hero-photo:hover {
+    width: 300px;
+    height: 300px;
+
+} */
+
+/* recent-posts */
+
+.recent-posts {
+    margin-top: 71px;
+    background-color: #EDF7FA;
+    padding-bottom: 39px;
+}
+
+.recent-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent-header {
+    font-family: "heeboRegular";
+    font-weight: 400;
+    font-size: 22px;
+    color: #21243D;
+}
+
+.recent-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-cards-item {
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+.recent-cards-item:not(:last-child) {
+    margin-right: 20px;
+}
+.recent-discription {
+    font-family: "heeboRegular";
+    font-size: 16px;
+    color: #00A8CC;
+}
+
+.line-item {
+    background-color: #21243D;
+    width: 1px;
+    height: 21px;
+    margin-right: 26px;
+    margin-left: 26px;       
+}
+
+.date-card {
+    display: flex;
+    align-items: center;
+}
+
+.date-text {
+    font-size: 18px;
+    font-family: "heeboRegular";
+    color: #21243D;
+}
+
+.date-discription {
+    font-size: 18px;
+    font-family: "heeboRegular";
+    color: #21243D;
+    line-height: 23px;
+}
+
+/* future works */
+
+.futured-works-header {
+    font-family: "heeboRegular";
+    font-weight: 400;
+    font-size: 22px;
+    color: #21243D;
+    margin-bottom: 44px;
+}
+
+.works-block {
+    display: flex;
+    margin-bottom: 15px;
+    
+}
+
+.image-work1 {
+    max-width: 246px;
+    margin-right: 18px;
+}
+
+.work-header {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-family: "heeboBold";  
+    font-size: 30px;    
+    color: #21243D;
+}
+
+.year-work {
+    font-family: "heeboBold";    
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    background-color:  #142850;
+    border-radius: 16px;
+    padding: 2px 10px 2px 10px ;
+    margin-right: 26px;
+
+}
+
+.type-work {
+    
+    font-family: "heeboRegular";
+    font-size: 20px;    
+    color: #8695A4;
+
+}
+
+.work-description {
+    font-size: 16px;
+    line-height: 23px;
+    color: #21243D;
+    font-family: "heeboRegular";
+}
+
+.furure-work-line {
+    height: 1px;
+    background-color: #E0E0E0;
+    margin-bottom: 31px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 182px;
+}
+
+.footer-icon {
+    display: flex;
+   
+}
+
+.contact-icon:not(:last-child) {
+    margin-right: 35px;
+}
+
+.footer-rights { 
+    margin-top: 26px;
+    font-family: "heeboRegular";
+    font-size: 14px;
+    color: #21243D;
+}
+
+
+
+@media (max-width: 375px) {
+    .nav-list {
+        margin-right: 18px;
+    }
+    .nav-list {
+        transform: translate(-100%);        
+        transition: all 1s;
+    }
+
+    .on  {
+       transform: none;
+    }
+    .burger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+
+    
+
+    .hero-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .hero-photo {
+        max-width: 174px;
+        height: 180px;
+        text-align: center;
+    }
+
+    .hero-left {
+        text-align: center;
+       
+    }
+
+    .hero-header {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .recent-discription {
+        display: none;
+    }
+
+    .recent-head {
+       justify-content: center; 
+    }
+    
+    .recent-cards  {
+        flex-wrap: wrap;
+        padding-right: 10px;
+        padding-left: 10px;
+       
+    }
+
+    .recent-cards-item:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 17px;
+    }
+
+    .futured-works-container {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .futured-works-header {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .works-block {
+        
+        flex-wrap: wrap;
+    }
+
+    .image-work1 {
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 17px;
+    }
+
+    .work-header {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .year-work {
+        font-size: 16px;
+    }
+
+    .type-work {
+        font-size: 16px; 
+    }
+
+    .work-description {
+        font-size: 16px;
+    }
+
+    main {
+        margin-bottom: 150px;
+    }
+}
