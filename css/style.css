@@ -1,12 +1,12 @@
 @font-face {
     font-family: "heeboRegular";
-    src: url(fonts/Heebo-Regular.ttf);
+    src: url(../fonts/Heebo-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: "heeboMedium";
-    src: url(fonts/Heebo-Medium.ttf);
+    src: url(../fonts/Heebo-Medium.ttf);
     font-weight: 500;
 }
 
